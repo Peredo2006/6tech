@@ -1,0 +1,89 @@
+/* form.css */
+
+
+#form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 8%;
+    background-color: #f3f5ff; /* Fundo do site */
+}
+
+.form-container {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 800px; /* Aumentei um pouco para caber os campos lado a lado */
+}
+
+.form-container h2 {
+    font-size: 2rem;
+    color: #470a59;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.form-row {
+    display: flex;
+    gap: 20px; /* Espaço entre os campos */
+    margin-bottom: 20px;
+}
+
+.form-group {
+    flex: 1; /* Faz com que os campos ocupem o espaço disponível */
+    margin-bottom: 0; /* Remove a margem inferior para os campos lado a lado */
+}
+
+.form-group.half {
+    flex: 1; /* Campos ocupam metade do espaço */
+}
+
+.form-group label {
+    display: block;
+    font-size: 1rem;
+    color: #1d1d1d;
+    margin-bottom: 8px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    color: #1d1d1d;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #4a78e4;
+    outline: none;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.btn-default {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+/* Responsividade */
+@media screen and (max-width: 768px) {
+    .form-row {
+        flex-direction: column; /* Empilha os campos verticalmente em telas menores */
+        gap: 0; /* Remove o espaço entre os campos */
+    }
+
+    .form-group.half {
+        flex: 1 1 100%; /* Campos ocupam 100% da largura em telas menores */
+        margin-bottom: 20px; /* Adiciona margem inferior para separar os campos */
+    }
+}

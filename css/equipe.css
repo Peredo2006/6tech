@@ -1,0 +1,80 @@
+#equipe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+#integrantes {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;  /* Permite que os itens se ajustem e quebrem para a próxima linha */
+    justify-content: center;
+    gap: 24px;
+    margin-top: 32px;
+}
+
+#integrante {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    gap: 18px;
+    width: 25%;  /* Faz com que cada integrante ocupe 25% da largura */
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, -0.1);
+    position: relative;
+    overflow: hidden;
+    box-sizing: border-box;  /* Certifica-se de que o padding não afete o tamanho total */
+}
+
+#integrante img {
+    max-width: 280px;
+    max-height: 280px;
+    width: auto;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.1);
+}
+
+.integrante-heart {
+    position: absolute;
+    background-color: #470a59;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.563rem;
+    color: #ffffea;
+    width: 70px;
+    height: 70px;
+    right: -10px;
+    top: -10px;
+    border-radius: 0px 37.5px 0px 42.5px;
+}
+
+.integrante-description {
+    color: #434343;
+    text-align: center;
+}
+
+@media screen and (max-width: 1170px) {
+    #integrantes {
+        justify-content: flex-start;  /* Alinha os itens para o início em vez de centralizar */
+    }
+
+    #integrante {
+        width: calc(50% - 12px); /* Responsivo para duas colunas em telas menores */
+    }
+} 
+
+@media screen and (max-width: 600px) {
+    #integrante {
+        width: 100%;  /* Responsivo para uma coluna em telas muito pequenas */
+    }
+
+    #equipe .section-subtitle {
+        text-align: center;
+    }
+}

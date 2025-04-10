@@ -1,0 +1,10 @@
+body {
+    background-color: #f3f5ff;
+}
+
+btn-default {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
