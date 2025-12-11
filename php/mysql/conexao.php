@@ -1,5 +1,5 @@
 <?php
-$server= "177.136.241.55";
+$server= "40.160.64.65";
 $user= "ifhostgru_6tech";
 $password= "YD3qP-j?Duo5raxZ";
 $dbname= "ifhostgru_6tech";
